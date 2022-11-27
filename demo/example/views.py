@@ -3,7 +3,7 @@ from datetime import date, datetime
 
 from django.conf import settings
 from django.shortcuts import render, redirect
-from django.core.urlresolvers import reverse_lazy
+from django.urls import reverse_lazy
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.views.generic import ListView, UpdateView, TemplateView

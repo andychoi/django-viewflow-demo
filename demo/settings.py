@@ -25,7 +25,7 @@ SECRET_KEY = '7u8z(m#4$t&m98hb+1bhl9gk9j%uc@wh!zaxl2f@p(4%212*tg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'viewflow',
+    
     'demo.example',
 
     'flowutils',

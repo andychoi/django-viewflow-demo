@@ -25,6 +25,7 @@ class DailyTimesheetApprovalFlow(Flow):
 
     process_description = 'Daily Timesheet Approval'
 
+    app_name = 'example'  
     label = 'daily'
     flow_label = 'daily'
 
@@ -74,6 +75,7 @@ class VacationApprovalFlow(Flow):
 
     process_description = 'Vacation Approval Request'
 
+    app_name = 'example'  
     label = 'vacation'
     flow_label = 'vacation'
 
