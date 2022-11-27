@@ -40,3 +40,8 @@ run celery worker
 $ celery -A demo worker --loglevel=info
 
 ```
+all others = users
+omar, taha,  = manager
+operator = operator
+
+

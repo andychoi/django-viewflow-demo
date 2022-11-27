@@ -14,7 +14,7 @@ from viewflow.models import Process, Task
 
 from .models import DailyTimesheet, Vacation
 from . import forms
-
+from django.http import HttpResponseRedirect
 
 def fast_login(request):
     """Provides the ability to quickly switch between test users"""
@@ -96,7 +96,13 @@ class FillDailyTimesheetView(UpdateProcessView):
         approval.sheet = sheet
         approval.save()
 
+        # submit, not save
         if '_continue' in form.data:
+
+            # self.activation.done()
+            # self.success('Task {task} has been completed.')
+            # return HttpResponseRedirect(self.get_success_url())
+            
             transaction.on_commit(self.activation_done)
             # return super(FillDailyTimesheetView, self).form_valid(form)
         return super(UpdateView, self).form_valid(form)
