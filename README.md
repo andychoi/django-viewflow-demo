@@ -16,10 +16,10 @@ A workflow demo using django, viewflow and adminlte
 ## Installation
 
 ```bash
-$ python3 -m venv env
+$ python3 -m venv .venv
 # or
 # virtualenv -p python3 env  # python 3.6 tested
-$ . env/bin/activate
+$ . .venv/bin/activate
 $ git clone https://github.com/rgharzeddine/django-viewflow-demo.git
 $ cd django-viewflow-demo
 $ pip install -r requirements.txt
